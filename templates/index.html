@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .parking-status {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .form-container input,
+        .form-container button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            margin-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Parking System</h1>
+    </header>
+    <main>
+        <div class="parking-status">
+            <h2>Parking Status</h2>
+            <p>Available Slots: 10</p>
+            <p>Occupied Slots: 5</p>
+        </div>
+        <div class="form-container">
+            <h2>Enter Car Details</h2>
+            <form>
+                <label for="carNumber">Car Number</label>
+                <input type="text" id="carNumber" name="carNumber" placeholder="Enter car number" required>
+                
+                <label for="ownerName">Owner Name</label>
+                <input type="text" id="ownerName" name="ownerName" placeholder="Enter owner name" required>
+                
+                <label for="parkingSlot">Parking Slot Number</label>
+                <input type="number" id="parkingSlot" name="parkingSlot" placeholder="Enter slot number" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Car Parking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
